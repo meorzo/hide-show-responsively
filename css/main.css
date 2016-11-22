@@ -19,8 +19,6 @@ html {
 
 img {
   width: 100%;
-  display: block;
-  padding: .2em;
 }
 
 img:nth-child(2),
@@ -31,15 +29,11 @@ img:nth-child(4) {
 @media only screen and (min-width: 25em) {
 
   img:first-child,
-  img:nth-child(3) {
-    display: inline-block;
-    width: 50%;
-  }
-
   img:nth-child(2),
+  img:nth-child(3),
   img:nth-child(4) {
     display: inline-block;
-    width: 50%;
+    width: 48%;
   }
 
 @media only screen and (min-width: 38em) {
@@ -48,7 +42,7 @@ img:nth-child(4) {
   img:nth-child(3),
   img:nth-child(4) {
     display: inline-block;
-    width: 33.3333%;
+    width: 32%;
   }
 
   img:first-child {
@@ -57,9 +51,11 @@ img:nth-child(4) {
 
 @media only screen and (min-width: 60em) {
 
-  img {
-    width: 25%;
-    display: block;
+  img:first-child,
+  img:nth-child(2),
+  img:nth-child(3),
+  img:nth-child(4) {
+    width: 23%;
     display: inline-block;
-
   }
+}
