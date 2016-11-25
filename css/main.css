@@ -17,8 +17,13 @@ html {
   box-sizing: inherit;
 }
 
+body {
+  text-align: center;
+}
+
 img {
   width: 100%;
+  display: inline-block;
 }
 
 img:nth-child(2),
@@ -28,20 +33,20 @@ img:nth-child(4) {
 
 @media only screen and (min-width: 25em) {
 
-  img:first-child,
+  img {
+    width: 49%;
+  }
+
   img:nth-child(2),
-  img:nth-child(3),
   img:nth-child(4) {
     display: inline-block;
-    width: 48%;
   }
+
+}
 
 @media only screen and (min-width: 38em) {
 
-  img:nth-child(2),
-  img:nth-child(3),
-  img:nth-child(4) {
-    display: inline-block;
+  img {
     width: 32%;
   }
 
@@ -49,13 +54,16 @@ img:nth-child(4) {
     display: none;
   }
 
+}
+
 @media only screen and (min-width: 60em) {
 
-  img:first-child,
-  img:nth-child(2),
-  img:nth-child(3),
-  img:nth-child(4) {
-    width: 23%;
+  img {
+    width: 24%;
+    display: inline-block;
+  }
+
+  img:first-child {
     display: inline-block;
   }
 }
